@@ -1,0 +1,114 @@
+:root {
+    --primary: #ffffff;
+    --secondary1: #00171F;
+    --secondary2: #003459;
+    --secondary3: #007EA7;
+    --secondary4: #00A8E8;
+    --black: #000000;
+    --input-bg: #f3f3f3;
+    --input-border: #d1d1d1;
+}
+
+#formCont {
+    display: flex;
+    justify-content: center;
+}
+
+#formCard {
+    background-color: var(--secondary1);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    width: 50%;
+    color: var(--primary);
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--secondary4);
+}
+
+.row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form-group {
+    flex: 1;
+}
+
+input, select {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--secondary2);
+}
+
+input::placeholder {
+    color: #888;
+}
+
+.button-container {
+    text-align: center;
+}
+
+.button {
+    background-color: var(--secondary3);
+    color: var(--primary);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.button:hover {
+    background-color: var(--secondary4);
+}
+
+/* Fondo con imagen */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/includes/images/fondo.jpg'); /* Asegúrate de que la imagen esté en la ruta correcta */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+}
+
+/* Centrado vertical del formulario */
+#formCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
+}
+
+/* Adjust position and size for Return button */
+#Return {
+    position: absolute; /* Position it absolutely within the viewport */
+    top: 20px; /* Adjust the vertical positioning */
+    left: 20px; /* Adjust the horizontal positioning */
+    z-index: 1; /* Ensure it stays above other elements */
+}
+
+#Return a {
+    font-size: 1.4rem; /* Increase the font size */
+    padding: 0.8rem 1.5rem; /* Increase padding for a larger button */
+    color: var(--primary);
+    background-color: var(--secondary4);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+#Return a:hover {
+    background-color: var(--secondary3);
+    color: var(--primary);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}

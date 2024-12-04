@@ -1,0 +1,116 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('includes\images\fondo.jpg'); /* Asegúrate de que la imagen esté en la ruta correcta */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  backdrop-filter: blur(8px);
+  overflow: hidden;
+}
+
+#Return {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+#Return a {
+  font-size: 1.4rem;
+  padding: 0.8rem 1.5rem;
+  color: var(--primary);
+  background-color: var(--secondary4);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+#Return a:hover {
+  background-color: var(--secondary3);
+  color: var(--primary);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estructura de la tabla */
+#tableContainer {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  width: 90%;
+}
+
+#tableCard {
+  background-color: var(--secondary1);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  color: var(--primary);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  text-align: center;
+  color: var(--secondary4);
+  margin-bottom: 1.5rem;
+}
+
+.hover-effect {
+  transition: transform 0.2s ease;
+}
+.hover-effect:hover {
+  transform: translateY(-2px);
+}
+.custom-table-container {
+  max-width: 1000px; /* Adjust based on red lines in image */
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.table {
+  margin-bottom: 0;
+}
+.table thead th {
+  background-color: #212529;
+  color: white;
+  border: none;
+  padding: 1rem;
+}
+.table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+.table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.table tbody td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+.dataTables_wrapper .dataTables_length select,
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 0.375rem 0.75rem;
+}
+.dataTables_wrapper .dataTables_length select:focus,
+.dataTables_wrapper .dataTables_filter input:focus {
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: #212529 !important;
+  color: white !important;
+  border: none;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: #343a40 !important;
+  color: white !important;
+  border: none;
+}

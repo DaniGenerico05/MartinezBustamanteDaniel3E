@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/includes/images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+}
+
+#login-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#login-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 350px;
+}
+
+#logo-text {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+.loginimg {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+#formLogin {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.3rem;
+}
+
+.input-group input {
+    width: 80%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#divbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+#btnlog {
+    text-align: center;
+    color: white;
+    background-color: #3CB2C2;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+
+#btnlog:hover {
+    background-color: #44CADB;
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+    #login-card {
+        padding: 1rem;
+        width: 90%;
+        max-width: 300px;
+    }
+
+    #logo-text {
+        font-size: 1.5rem;
+    }
+
+    .loginimg {
+        height: 50px;
+        width: 50px;
+    }
+
+    .input-group label {
+        font-size: 0.8rem;
+    }
+
+    .input-group input {
+        font-size: 0.8rem;
+        padding: 0.4rem;
+    }
+
+    #btnlog {
+        font-size: 0.9rem;
+        padding: 0.4rem 1rem;
+    }
+}

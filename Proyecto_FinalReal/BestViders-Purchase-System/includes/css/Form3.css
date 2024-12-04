@@ -1,0 +1,126 @@
+:root {
+    --primary: #ffffff;
+    --secondary1: #00171F; /* Azul oscuro */
+    --secondary2: #003459;
+    --secondary3: #007EA7;
+    --secondary4: #00A8E8; /* Azul claro */
+    --black: #000000;
+    --input-bg: #f3f3f3;
+    --input-border: #d1d1d1;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/includes/images/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    backdrop-filter: blur(8px);
+    overflow: hidden;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#formCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 2rem;
+}
+
+#formCard {
+    background-color: var(--secondary1);
+    padding: 2.5rem; /* Aumenta el padding para más espacio */
+    border-radius: 1.5rem;
+    width: 85%;
+    max-width: 450px; /* Amplía el ancho máximo del formulario */
+    color: var(--primary);
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--secondary4);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.8rem; /* Aumenta el margen inferior para separar más los elementos */
+}
+
+input, select {
+    width: 100%;
+    padding: 1rem; /* Aumenta el padding para inputs más grandes */
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-border);
+    background-color: var(--input-bg);
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 2rem; /* Aumenta el margen superior para mayor separación */
+}
+
+.button {
+    background-color: var(--secondary3);
+    color: var(--primary);
+    padding: 0.9rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.3rem; /* Aumenta el tamaño de la fuente */
+    transition: background-color 0.3s ease;
+    width: 100%; /* Hace que el botón ocupe el ancho del contenedor */
+}
+
+.button:hover {
+    background-color: var(--secondary4);
+}
+
+/* Estilo para el botón de regreso */
+/* Adjust position and size for Return button */
+#Return {
+    position: absolute; /* Position it absolutely within the viewport */
+    top: 20px; /* Adjust the vertical positioning */
+    left: 20px; /* Adjust the horizontal positioning */
+    z-index: 1; /* Ensure it stays above other elements */
+}
+
+#Return a {
+    font-size: 1.4rem; /* Increase the font size */
+    padding: 0.8rem 1.5rem; /* Increase padding for a larger button */
+    color: var(--primary);
+    background-color: var(--secondary4);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+#Return a:hover {
+    background-color: var(--secondary3);
+    color: var(--primary);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajusta el tamaño de la caja de texto para la descripción */
+textarea#descrp {
+    width: 90%; /* Ocupa todo el ancho disponible en el contenedor */
+    height: 165px; /* Aumenta la altura según lo necesario */
+    padding: 1rem; /* Aumenta el padding para que el texto no esté pegado al borde */
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-border);
+    background-color: var(--input-bg);
+    font-size: 1rem; /* Ajusta el tamaño de fuente si es necesario */
+    resize: vertical; /* Permite al usuario ajustar la altura de la caja si es necesario */
+}

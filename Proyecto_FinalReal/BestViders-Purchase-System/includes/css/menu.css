@@ -1,0 +1,93 @@
+#header {
+    margin: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;
+    padding-left: 3rem;
+    background-color: rgb(19, 19, 19);
+	border-radius: 0.3rem;
+}
+
+#menu {
+    margin-left: auto;
+    width: 45%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Menú principal */
+#menu ul {	
+	list-style: none;
+	position: relative;
+	display: flex; /* Cambiado para que los elementos estén en una fila */
+	margin: 0;
+	padding: 0;
+	background-color: rgb(60, 178, 194);
+	border-radius: 1.5rem;
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+
+/* Estilos de los enlaces del menú */
+#menu ul a {
+	display: block;
+	text-decoration: none;
+	font-size: 2rem;
+	line-height: 0.5rem;
+	padding: 1rem;
+	color: var(--white);
+}
+
+/* Elementos principales del menú */
+#menu ul li {
+	position: relative;
+	margin: 0;
+	padding: 2rem 0;
+	z-index:1;
+    flex:1;
+    text-align: center;
+}
+
+/* Cambio de fondo al hacer hover en los elementos principales */
+#menu ul li:hover {
+	background: rgb(68, 202, 219);
+    border-radius: 1.5rem;
+    /* border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem; */
+}
+
+/* Submenús ocultos inicialmente */
+#menu ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background: rgb(68, 202, 219);
+	padding: 0;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    width: 100%;
+}
+/* Elementos dentro de los submenús */
+#menu ul ul li {
+	float: none;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-radius: 2rem;
+}
+
+#menu ul ul a {
+	padding: 1rem;
+	font-size: 1.6rem;
+}
+
+/* Submenús de tercer nivel */
+#menu ul ul ul {
+	top: 0;
+	left: 100%;
+}
+
+/* Mostrar submenús al hacer hover en el elemento principal */
+#menu ul li:hover > ul {
+	display:flex;
+}

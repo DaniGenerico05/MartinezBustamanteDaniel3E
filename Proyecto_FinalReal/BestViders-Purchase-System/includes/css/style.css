@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'Tiny5-Regular';
+    src: url('fonts/Tiny5-Regular.ttf') format('truetype');
+}
+:root {
+    --primary: #ffffff;
+    --secondary1: #00171F;
+    --secondary2: #003459;
+    --secondary3: #007EA7;
+    --secondary4: #00A8E8;
+    --black: #000000;
+    --font-family: 'Arial', sans-serif;
+}
+
+html {
+    background-color: var(--primary);
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    color: var(--black);
+    justify-content: center;
+}
+
+/* Encabezados */
+h1 {
+    font-family: 'Tiny5-Regular';
+    font-size: 9.5rem;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: var(--secondary1);
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: var(--secondary2);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+#home {
+    text-align: center;
+    background-color: #5fcbf5;
+    width: fit-content;
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+#home p {
+    font-size: 1.8rem;
+}
+
+#homeimage, #home-image {
+    display: block;
+    margin: 2rem auto;
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos de secciones de información */
+.info-section {
+    background-color: #04658cd8;
+    color: var(--primary);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0.8rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-section p, .info-section ul, .info-section ol {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.info-section ul, .info-section ol {
+    margin-left: 2rem;
+}
+
+.info-section li {
+    margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: var(--secondary2);
+    color: var(--primary);
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-brand {
+    color: var(--secondary3);
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+footer a {
+    color: var(--secondary4);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--secondary3);
+}
+
+/* Menu */
+#header {
+    width: 100vw;
+    margin: 0;
+    padding: 0 3rem;
+    background-color: var(--secondary1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#menu {
+    margin-left: auto;
+    width: 45%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menu ul {
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: var(--secondary2);
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+
+#menu ul a {
+    display: block;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 0.5rem;
+    padding: 1rem;
+    color: var(--primary);
+}
+
+#menu ul li {
+    position: relative;
+    margin: 0;
+    padding: 2rem 0;
+    z-index: 1;
+    flex-grow: 2;
+    text-align: center;
+}
+
+#menu ul li:hover {
+    background: var(--secondary3);
+    border-radius: 1.5rem;
+}
+
+#menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(1, 74, 100, 0.9);
+    padding: 0.5rem;
+    min-width: 15rem;
+    border-radius: 1.5rem;
+    flex-direction: column;
+}
+
+#menu ul ul li {
+    width: 100%;
+    margin: 0.5rem 0;
+    border-radius: 1.5rem;
+    white-space: nowrap;
+}
+
+#menu ul ul a {
+    padding: 1rem 1.5rem;
+    font-size: 1.6rem;
+    color: var(--primary);
+    transition: background 0.3s;
+}
+
+#menu ul li:hover > ul {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu ul ul ul {
+    top: 100%;
+    left: 0;
+    position: relative;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .info-section {
+        padding: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
