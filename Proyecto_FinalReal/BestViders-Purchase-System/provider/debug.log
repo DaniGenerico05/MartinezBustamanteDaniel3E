@@ -1,0 +1,136 @@
+2024-11-29 05:58:54 - POST data: Array
+(
+)
+
+
+2024-11-29 07:21:42 - POST data: Array
+(
+)
+
+
+2024-11-29 07:31:26 - POST data: Array
+(
+)
+
+
+2024-11-29 07:34:38 - POST data: Array
+(
+)
+
+
+2024-11-29 07:34:50 - POST data: Array
+(
+)
+
+
+2024-11-29 11:46:44 - POST data: Array
+(
+)
+
+
+2024-11-29 11:47:49 - POST data: Array
+(
+)
+
+
+2024-11-29 11:48:21 - POST data: Array
+(
+)
+
+
+2024-11-29 11:49:10 - POST data: Array
+(
+    [fiscalName] => Bimbo
+    [numTel] => 6645678904
+    [email] => bimbo@gmail.com
+    [materials] => Array
+        (
+            [0] => IC0030
+            [1] => CAP003
+        )
+
+    [action] => add_provider
+)
+
+
+2024-11-29 11:49:38 - POST data: Array
+(
+)
+
+
+2024-11-29 12:27:41 - POST data: Array
+(
+)
+
+
+2024-11-29 12:28:42 - POST data: Array
+(
+    [fiscalName] => LaCosteña
+    [numTel] => 6442349870
+    [email] => lacostenia@gmail.com
+    [materials] => Array
+        (
+            [0] => IC0030
+            [1] => CAP003
+            [2] => CAP006
+            [3] => CON008
+            [4] => LED001
+            [5] => IC0002
+            [6] => TRN002
+            [7] => PCB001
+            [8] => PCB002
+            [9] => RES004
+            [10] => RES010
+            [11] => DIO003
+            [12] => CON005
+        )
+
+    [action] => add_provider
+)
+
+
+2024-12-01 04:37:59 - POST data: Array
+(
+)
+
+
+2024-12-01 23:28:02 - POST data: Array
+(
+)
+
+
+2024-12-01 17:08:50 - POST data: Array
+(
+)
+
+
+2024-12-01 17:10:31 - POST data: Array
+(
+)
+
+
+2024-12-01 17:10:41 - POST data: Array
+(
+)
+
+
+2024-12-02 12:25:52 - POST data: Array
+(
+)
+
+
+2024-12-03 07:20:02 - POST data: Array
+(
+)
+
+
+2024-12-03 23:53:21 - POST data: Array
+(
+)
+
+
+2024-12-04 03:51:52 - POST data: Array
+(
+)
+
+
